@@ -1,0 +1,77 @@
+main, footer {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(28, 28, 28)); 
+    background-attachment: fixed;
+    /*Coloquei um background no fundo, caso nao goste pode tirar, só pra testar uns design*/
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.logo {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+
+#logo-img{
+    height: 50%;
+    width: 50%;
+}
+
+.pesquisa {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+    width: 50%;
+}
+
+#PesquisaFilme {
+    border-radius: 15px;
+    width: 40%;
+    text-align: center;
+    font-size: 2.5vh; /*Eu tinha colocado em rem mas nao ficava responsivo, nsei se assim é o mais correto de fazer mas ficou*/
+}
+
+#botao {
+    padding-left: 10px;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+}
+
+.navegacao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vh;
+}
+
+li {
+    transition: 0.5s;
+    padding-right: 30px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li:hover{
+    transform: scale(1.2);
+}
+
+a:hover {
+    color: red;
+}
