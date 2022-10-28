@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +9,13 @@
     <link rel="stylesheet" href="./css/padrao.css">
     <link rel="stylesheet" href="./css/home.css">
     <title>Catalogo</title>
-    
+
 </head>
+
 <body>
     <header>
         <div class="logo">
-            <img src="./img/netflix-logo.png" alt="Logo Netflix" id="logo-img">
+            <a id="Alogo" href="home.html"><img src="./img/netflix-logo.png" alt="Logo Netflix" id="logo-img"></a>
         </div>
 
         <div class="pesquisa">
@@ -21,20 +23,21 @@
             <input type="image" id="botao" src="./img/lupa.png" onclick="Pesquisar_Filme()">
         </div>
     </header>
-    
+
     <main>
         <divs id="catalogo">
-            
+
         </div>
     </main>
 
     <footer>
         <ul class="navegacao">
-            <li> <a href="terror.html">Terror</a></li>
-            <li> <a href="comedia.html">Comédia</a></li>
-            <li> <a href="acao.html">Ação</a></li>
+            <li> <a class="Generos" href="terror.html">Terror</a></li>
+            <li> <a class="Generos" href="comedia.html">Comédia</a></li>
+            <li> <a class="Generos" href="acao.html">Ação</a></li>
         </ul>
     </footer>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,6 @@
-main, footer {
-    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(28, 28, 28)); 
+main,
+footer {
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(28, 28, 28));
     background-attachment: fixed;
     /*Coloquei um background no fundo, caso nao goste pode tirar, só pra testar uns design*/
 }
@@ -21,9 +22,9 @@ header {
     justify-content: center;
 }
 
-#logo-img{
-    height: 50%;
-    width: 50%;
+#logo-img {
+    height: 100%;
+    width: 100%;
 }
 
 .pesquisa {
@@ -37,19 +38,20 @@ header {
     border-radius: 15px;
     width: 40%;
     text-align: center;
-    font-size: 2.5vh; /*Eu tinha colocado em rem mas nao ficava responsivo, nsei se assim é o mais correto de fazer mas ficou*/
+    font-size: 2.5vh;
+    /*Eu tinha colocado em rem mas nao ficava responsivo, nsei se assim é o mais correto de fazer mas ficou*/
 }
 
 #botao {
     padding-left: 10px;
 }
 
-footer{
+footer {
     width: 100vw;
     height: 10vh;
 }
 
-.navegacao{
+.navegacao {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -62,16 +64,21 @@ li {
     padding-right: 30px;
 }
 
-a {
+.Generos {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
-li:hover{
+li:hover {
     transform: scale(1.2);
 }
 
-a:hover {
+.Generos:hover {
     color: red;
+}
+
+#logo-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
