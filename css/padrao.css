@@ -2,7 +2,6 @@ main,
 footer {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(28, 28, 28));
     background-attachment: fixed;
-    /*Coloquei um background no fundo, caso nao goste pode tirar, só pra testar uns design*/
 }
 
 header {
@@ -15,7 +14,6 @@ header {
     background-color: black;
 }
 
-
 .logo {
     width: 50vw;
     display: flex;
@@ -26,7 +24,10 @@ header {
     height: 100%;
     width: 100%;
 }
-
+#logo-img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
 .pesquisa {
     display: flex;
     flex-direction: row;
@@ -78,7 +79,10 @@ li:hover {
     color: red;
 }
 
-#logo-img:hover {
-    transform: scale(1.1);
-    transition: 0.5s;
+p {
+display: flex;
+flex-direction: column;
+font-size: 3vh;
+left: 5vh;
+
 }

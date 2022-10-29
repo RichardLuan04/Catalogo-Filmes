@@ -1,13 +1,47 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: white;
+}
+
 main {
     width: 100vw;
     height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#imagem {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+}
+
+#catalogo {
+    width: 50vw;
+}
+
+#tituloCatalogo {
+    font-size: 10vh;
+}
+
+.topo-titulo {
+    height: 40vh;
+}
+
+#metascore {
+    width: 25vw;
 }
 
 .filmePesquisa {
     margin-left: 4vh;
     margin-top: 3vh;
-    max-width: 30vh;
-    max-height: 20vw;
+    max-width: 90vw;
+    max-height: 60vh;
     object-fit: cover;
 }
 
@@ -20,4 +54,56 @@ main {
     list-style: none;
     height: 50%;
     width: 50%;
+}
+
+#fundo-verde {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 7%;
+    height: 20%;
+    background-color: green;
+}
+
+#fundo-laranja{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 7%;
+    height: 20%;
+    background-color:orange ;
+}
+
+#fundo-vermelho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 7%;
+    height: 20%;
+    background-color: red;  
+}
+
+#fundo-cinza{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    width: 7%;
+    height: 20%;
+    background-color:rgb(105, 105, 105);
+}
+
+#score {
+    font-size: 5vh;
+}
+
+#anoCatalogo, #tempoCatalogo, #infoCatalogo, #generoCatalogo {
+    padding: 10px;
+}
+
+.info-baixo {
+    height: 40vh;
 }
