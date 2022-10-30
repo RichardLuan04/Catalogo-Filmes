@@ -10,13 +10,15 @@ async function Pesquisar_Filme() {
     var response = await fetch(endpoint)
     var bodyJson = await response.json()
     
-    if (nomeFilme != ""){
-        var imagem = document.getElementById("imagemCatalogo").src = bodyJson.Poster
-        var titulo = document.getElementById("tituloCatalogo").innerText = bodyJson.Title
-        var ano = document.getElementById("anoCatalogo").innerText = "Ano: " + bodyJson.Year
-        var tempo = document.getElementById("tempoCatalogo").innerText = "Tempo: " + bodyJson.Runtime
-        var info = document.getElementById ("infoCatalogo").innerText = "Sobre: " + bodyJson.Plot
-        var genero = document.getElementById ("generoCatalogo").innerText = "Gênero: " + bodyJson.Genre
+    var error = bodyJson.Response
+
+    if (nomeFilme != "" && error == "True"){
+        document.getElementById("imagemCatalogo").src = bodyJson.Poster
+        document.getElementById("tituloCatalogo").innerText = bodyJson.Title
+        document.getElementById("anoCatalogo").innerText = "Ano: " + bodyJson.Year
+        document.getElementById("tempoCatalogo").innerText = "Tempo: " + bodyJson.Runtime
+        document.getElementById ("infoCatalogo").innerText = "Sobre: " + bodyJson.Plot
+        document.getElementById ("generoCatalogo").innerText = "Gênero: " + bodyJson.Genre
         var score = document.getElementById("score").innerText = bodyJson.Metascore
 
         if (score >= 60) {
@@ -29,5 +31,14 @@ async function Pesquisar_Filme() {
         } else {
             fundo.setAttribute("id", "fundo-cinza")
         }   
+    } else {
+        document.getElementById("imagemCatalogo").src = ""
+        document.getElementById("anoCatalogo").innerText = ""
+        document.getElementById("tempoCatalogo").innerText = ""
+        document.getElementById ("infoCatalogo").innerText = ""
+        document.getElementById ("generoCatalogo").innerText = ""
+        document.getElementById("score").innerText = ""
+
+        document.getElementById("tituloCatalogo").innerText = bodyJson.Error
     }
 }
