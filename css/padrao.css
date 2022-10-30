@@ -15,36 +15,40 @@ header {
 }
 
 .logo {
-    width: 50vw;
+    width: 50%;
     display: flex;
+    align-items: center;
     justify-content: center;
 }
 
-#logo-img {
-    height: 100%;
-    width: 100%;
+.logo-img {
+    height: 25vh;
 }
-#logo-img:hover {
+
+.logo-img:hover {
     transform: scale(1.1);
     transition: 0.5s;
 }
+
 .pesquisa {
+    width: 50%;
+    height: 80%;
     display: flex;
     flex-direction: row;
-    height: 50%;
-    width: 50%;
 }
 
 #PesquisaFilme {
-    border-radius: 15px;
-    width: 40%;
+    border-radius: 15vh;
+    border: solid 0.5vh;
+    border-color: rgb(103, 0, 0);
     text-align: center;
     font-size: 2.5vh;
-    /*Eu tinha colocado em rem mas nao ficava responsivo, nsei se assim é o mais correto de fazer mas ficou*/
+    width: 40%;
 }
 
 #botao {
     padding-left: 10px;
+    border: none;
 }
 
 footer {
@@ -65,24 +69,17 @@ li {
     padding-right: 30px;
 }
 
+li:hover {
+    transform: scale(1.2);
+}
+
+
 .Generos {
     color: white;
     text-decoration: none;
     transition: 0.3s;
 }
 
-li:hover {
-    transform: scale(1.2);
-}
-
 .Generos:hover {
     color: red;
-}
-
-p {
-display: flex;
-flex-direction: column;
-font-size: 3vh;
-left: 5vh;
-
 }
