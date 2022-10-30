@@ -49,6 +49,7 @@ header {
 #botao {
     padding-left: 10px;
     border: none;
+    height: 10vh;
 }
 
 footer {
