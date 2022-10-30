@@ -13,10 +13,10 @@ async function Pesquisar_Filme() {
     if (nomeFilme != ""){
         var imagem = document.getElementById("imagemCatalogo").src = bodyJson.Poster
         var titulo = document.getElementById("tituloCatalogo").innerText = bodyJson.Title
-        var ano = document.getElementById("anoCatalogo").innerText = bodyJson.Year
-        var tempo = document.getElementById("tempoCatalogo").innerText = bodyJson.Runtime
-        var info = document.getElementById ("infoCatalogo").innerText = bodyJson.Plot
-        var genero = document.getElementById ("generoCatalogo").innerText = bodyJson.Genre
+        var ano = document.getElementById("anoCatalogo").innerText = "Ano: " + bodyJson.Year
+        var tempo = document.getElementById("tempoCatalogo").innerText = "Tempo: " + bodyJson.Runtime
+        var info = document.getElementById ("infoCatalogo").innerText = "Sobre: " + bodyJson.Plot
+        var genero = document.getElementById ("generoCatalogo").innerText = "Gênero: " + bodyJson.Genre
         var score = document.getElementById("score").innerText = bodyJson.Metascore
 
         if (score >= 60) {
