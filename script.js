@@ -2,6 +2,8 @@
 
 var fundo = document.getElementById("Trocar_Fundo")
 
+
+
 async function Pesquisar_Filme() {
 
     var nomeFilme = document.getElementById('PesquisaFilme').value

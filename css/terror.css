@@ -1,0 +1,18 @@
+main {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 35vh;
+    padding: 1rem;
+    transition: 0.5s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
