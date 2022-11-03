@@ -1,10 +1,17 @@
 // URL = https://www.omdbapi.com/?t=[Nome do filme/serie/Anime]&apikey=6c370831
 
+var main_principal = document.getElementById("main-2")
+var main_pesquisa = document.getElementById("main-1")
+
 var fundo = document.getElementById("Trocar_Fundo")
 
 
-
 async function Pesquisar_Filme() {
+
+    if (main_principal.style.display == "flex"){
+        main_principal.style.display = "none"
+        main_pesquisa.style.display = "flex"
+    }
 
     var nomeFilme = document.getElementById('PesquisaFilme').value
     var endpoint = `https://www.omdbapi.com/?t=${nomeFilme}&apikey=6c370831`

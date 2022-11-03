@@ -1,5 +1,5 @@
 main,
-footer {
+footer,#main-2 {
     background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(28, 28, 28));
     background-attachment: fixed;
 }

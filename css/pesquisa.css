@@ -2,10 +2,35 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
+#main-2{
+    width: 100vw;
+    height: 110vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.filmes-topo, .filmes-meio, .filmes-baixo{
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-2 img {
+    height: 90%;
+    padding: 10%;
+    transition: 0.5s;
+}
+
+#main-2 img:hover {
+    transform: scale(1.1);
+}
+
+#main-1 {
     width: 100vw;
     height: 80vh;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
